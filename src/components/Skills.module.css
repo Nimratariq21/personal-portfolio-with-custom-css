@@ -1,0 +1,54 @@
+/* components/Skills.module.css */
+
+.container {
+    padding-top: 8rem; /* pt-32 */
+    padding-left: 3rem;
+  }
+  
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .gridContainer {
+      grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
+    }
+  }
+  
+  .heading {
+    font-size: 2.25rem; /* text-4xl */
+  }
+  
+  @media (min-width: 768px) {
+    .heading {
+      font-size: 3rem; /* md:text-5xl */
+    }
+  }
+  
+  .description {
+    color: #9ca3af; /* text-gray-400 */
+    padding-top: 0.5rem; /* pt-2 */
+  }
+  
+  .skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.875rem; /* text-3xl */
+  }
+  
+  @media (min-width: 640px) {
+    .skillsGrid {
+      font-size: 2.25rem; /* sm:text-4xl */
+    }
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* space-y-2 */
+    font-weight: bold; /* font-bold */
+  }
+  
